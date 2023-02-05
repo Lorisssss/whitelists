@@ -33,8 +33,6 @@ app.get("/authenticate", function(req, res) {
               if (req.headers[hwid.toLowerCase()]) {
                      HWID = req.headers[hwid.toLowerCase()]
                    res.write(hmac('success' + secretkey1, secretkey2)); 
-      
-                     
               }
        } 
        (HWID == "")
