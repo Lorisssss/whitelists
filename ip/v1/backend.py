@@ -17,7 +17,7 @@ def lol():
 
 @app.route("/whitelist/getresponse")
 def main():
-    ips = requests.get("http://45.77.119.78/buyersipexample.txt")
+    ips = requests.get("http://nigger.com/buyersipexample.txt")
     ip = request.remote_addr
     if ip in ips.text:
         return ''.join(random.choice(responses1))
