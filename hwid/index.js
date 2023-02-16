@@ -35,12 +35,12 @@ app.get("/authenticate", function(req, res) {
                    res.write(hmac('success' + secretkey1, secretkey2)); 
               }
        } 
-       (HWID == "")
+       if (HWID == "") {
               return res.status(404).send(
                      JSON.stringify({success:false,message:"uwu"})
               )
        }
-)
+})
 
 const port = 5000;
 
